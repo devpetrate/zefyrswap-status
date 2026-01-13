@@ -7,17 +7,23 @@ user-agent: zefyrswap
 sites:
   - name: ZefyrSwap
     url: https://zefyrswap.com
+    type: globalping
+    location: World
     
   - name: ZefyrSwap API
     url: https://api.zefyrswap.com
+    type: globalping
+    location: World
     
   - name: ZefyrSwap App
     url: https://app.zefyrswap.com
+    type: globalping
+    location: World
     
-  - name: Router Contract Health
-    check: "tcp-ping"
-    url: mainnet.base.org
-    port: 443
+  # - name: Router Contract Health
+  #   check: "tcp-ping"
+  #   url: mainnet.base.org
+  #   port: 443
 
 # Status website configuration
 status-website:
