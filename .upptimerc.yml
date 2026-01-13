@@ -13,18 +13,21 @@ sites:
     expectedStatusCodes:
       - 200
       - 403
+    __dangerous__body_down_if_text_missing: "ZefyrSwap"
     
   - name: ZefyrSwap API
     url: https://api.zefyrswap.com
     expectedStatusCodes:
       - 200
       - 403
+    __dangerous__body_down_if_text_missing: "ZefyrSwap"
     
   - name: ZefyrSwap App
     url: https://app.zefyrswap.com
     expectedStatusCodes:
       - 200
       - 403
+    __dangerous__body_down_if_text_missing: "ZefyrSwap"
     
   # - name: Router Contract Health
   #   check: "tcp-ping"
