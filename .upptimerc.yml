@@ -5,8 +5,8 @@ user-agent: zefyrswap
 
 # Add your sites here
 sites:
-  - name: Google Test
-    url: https://www.google.com
+  # - name: Google Test
+  #   url: https://www.google.com
 
   - name: ZefyrSwap
     url: https://zefyrswap.com
