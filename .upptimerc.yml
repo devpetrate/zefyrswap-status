@@ -1,36 +1,70 @@
 # Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+owner: devpetrate # Replace with your GitHub username
+repo: zefyrswap-status # Your repository name
+user-agent: zefyrswap
 
+# Add your sites here
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Test Broken Site
-    url: https://thissitedoesnotexist.koj.co
-  - name: IPv6 test
-    url: forwardemail.net
-    port: 80
+  - name: ZefyrSwap
+    url: https://zefyrswap.com
+    
+  - name: ZefyrSwap API
+    url: https://api.zefyrswap.com
+    
+  - name: ZefyrSwap App
+    url: https://app.zefyrswap.com
+    
+  - name: Router Contract Health
     check: "tcp-ping"
-    ipv6: true
+    url: mainnet.base.org
+    port: 443
 
+# Status website configuration
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  cname: status.zefyrswap.com
+  
+  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name here
+  # baseUrl: /zefyrswap-status
+  
+  logoUrl: https://www.zefyrswap.com/logos/Zefyr.svg
+  name: ZefyrSwap Status
+  introTitle: "**ZefyrSwap** DEX Aggregator Status"
+  introMessage: Real-time status and uptime monitoring for ZefyrSwap services
+  
   navbar:
     - title: Status
       href: /
     - title: GitHub
-      href: https://github.com/$OWNER/$REPO
+      href: https://github.com/devpetrate/zefyrswap-status
+    - title: ZefyrSwap
+      href: https://zefyrswap.com
 
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+# Commit messages
+commitMessages:
+  readmeContent: ":pencil: Update summary in README [skip ci]"
+  summaryJson: ":card_file_box: Update status summary [skip ci]"
+  statusChange: "$EMOJI $SITE_NAME is $STATUS ($RESPONSE_CODE in $RESPONSE_TIME ms) [skip ci]"
+  graphsUpdate: ":bento: Update graphs [skip ci]"
+
+# Monitoring configuration
+workflowSchedule:
+  uptime: "*/5 * * * *"  # Check every 5 minutes
+  responseTime: "0 */6 * * *"  # Record response time every 6 hours
+  graphs: "0 2 * * *"  # Generate graphs daily at 2am
+  staticSite: "0 3 * * *"  # Update status page daily at 3am
+
+# Notification configuration (optional)
+notifications:
+  # - type: slack
+  #   webhook-url: $SLACK_WEBHOOK_URL
+  # Add Discord webhook if you prefer
+  - type: discord
+    webhook-url: $DISCORD_WEBHOOK_URL
+
+# Response time configuration
+assignees:
+  - devpetrate
+
+# PAT with repo scope
+user-agent: zefyrswap
