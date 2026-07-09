@@ -4,53 +4,59 @@
     "url": "https://zefyrswap.com",
     "icon": "https://icons.duckduckgo.com/ip3/zefyrswap.com.ico",
     "slug": "zefyr-swap",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
+    "uptimeDay": "99.32%",
+    "uptimeWeek": "99.90%",
+    "uptimeMonth": "99.98%",
     "uptimeYear": "100.00%",
     "time": 522,
-    "timeDay": 540,
-    "timeWeek": 516,
-    "timeMonth": 550,
+    "timeDay": 522,
+    "timeWeek": 506,
+    "timeMonth": 551,
     "timeYear": 522,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2026-07-09": 10
+    }
   },
   {
     "name": "ZefyrSwap API",
     "url": "https://api.zefyrswap.com",
     "icon": "https://icons.duckduckgo.com/ip3/api.zefyrswap.com.ico",
     "slug": "zefyr-swap-api",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
+    "uptimeDay": "99.66%",
+    "uptimeWeek": "99.95%",
+    "uptimeMonth": "99.99%",
     "uptimeYear": "100.00%",
     "time": 511,
-    "timeDay": 561,
-    "timeWeek": 524,
-    "timeMonth": 546,
+    "timeDay": 556,
+    "timeWeek": 520,
+    "timeMonth": 547,
     "timeYear": 511,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2026-07-09": 5
+    }
   },
   {
     "name": "ZefyrSwap App",
     "url": "https://app.zefyrswap.com",
     "icon": "https://icons.duckduckgo.com/ip3/app.zefyrswap.com.ico",
     "slug": "zefyr-swap-app",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.99%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
     "time": 507,
-    "timeDay": 485,
-    "timeWeek": 495,
-    "timeMonth": 562,
+    "timeDay": 454,
+    "timeWeek": 487,
+    "timeMonth": 563,
     "timeYear": 507,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2026-07-09": 0
+    }
   }
 ]
